@@ -9,6 +9,7 @@
 		header('location: login.php');
     }
 ?>
+
         <h1>Welcome to the Admin page</h1>
         
     <div id="buttons">
@@ -18,7 +19,7 @@
         <a href="create_user.php"><button> Create New User</button></a>
     </div>
     <div id="content">
-        <template id="orderTemp">
+        <template id="orderInstace">
             <h4>Order:</h4>
             <table id ="orders">
                 <tr>
@@ -28,7 +29,7 @@
                 <!-- Rows will inserted here -->
             </table>
         </template>
-        <template id="productTemp">
+        <template id="productInstace">
             <h4>Products:</h4>
             <table id ="products">
                 <tr>
@@ -45,7 +46,7 @@
             <input type="text" placeholder="Antal" id="units">
             <button onclick=updateStock()>Update stock balance</button>
         </template>
-        <template id="newsTemp">
+        <template id="newsInstace">
             <h4>Newsletter subscribers:</h4>
             <table id="newsletter">
                 <tr>
