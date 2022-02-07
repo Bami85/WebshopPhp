@@ -6,3 +6,6 @@
     display: flex;
     justify-content:center ;
 }
+i.lni.lni-bootstrap.logoPhp::before {
+   font-size: 50px; 
+}
