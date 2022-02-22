@@ -33,7 +33,6 @@ Class Database {
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction);
 
-        error_log($result)
 
         if(empty($result)) {
             throw new Exception($this->selectedClass . " with ID " . $productid . " is not found..", 500);

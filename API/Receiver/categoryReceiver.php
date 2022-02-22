@@ -3,7 +3,7 @@
 try{
 
     include_once("./../Controllers/categoryController.php");
-    
+
     if($_SERVER["REQUEST_METHOD"] == "GET") {
 
         if($_GET["action"] == "getAll") {
@@ -24,7 +24,7 @@ try{
         }
     }
 
-    
+
 }catch(Exception $e) {
     echo json_encode(array("Message" => $e->getMessage(), "Status" => $e->getCode()));
 }

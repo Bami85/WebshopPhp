@@ -8,13 +8,13 @@ try{
 
         if($_GET["action"] == "getAll") {
 
-            $controller = new orderController();
+            $controller = new ordersController();
             echo(json_encode($controller->getAll()));
             exit;
 
         }else if($_GET["action"] == "getById") {
 
-            $controller = new orderController();
+            $controller = new ordersController();
             echo(json_encode($controller->getById((int)$_GET["orderid"])));
 
             if(!isset($_GET["orderid"])) {
