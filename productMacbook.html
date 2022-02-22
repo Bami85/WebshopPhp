@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <title>WebShop</title>
+    <script defer src="./Js/productMacbook.js"></script>
+    <title>AppleTech</title>
 </head>
 <body>
     <!-- ---------------------------------------------header--------------------------------------------------------- -->
@@ -16,12 +16,12 @@
           <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
               <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <i class="lni lni-bootstrap logoPhp"></i>
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
               </a>
-
+    
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="#" class="nav-link text-white">
+                  <a href="./index.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
                     Home
                   </a>
@@ -72,40 +72,67 @@
         </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-       <!-- ---------------------------------------------Category--------------------------------------------------------- -->
-<section class="h1Cate"><h1>Categories</h1></section>
+       <!-- ---------------------------------------------ProductMacbookMain--------------------------------------------------------- -->
+<section class="h1Cate"><h1>Macbooks</h1></section>
 
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">    
-                <a href="./productWatches.html"><img class="bd-placeholder-img card-img-top" src="./productImages/AppleWatch/appleWatch-2021.jpg"></a>
-                <div class="card-body">
-                  <a href="./productWatches.html"><h2 class="card-text categoryh2">Apple Watches</h2></a>
+<main>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="">
+
+            <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./productIphones.html"><img class="bd-placeholder-img card-img-top" src="./productImages/Iphones/Iphone11.128GB.pic1.jpg"></a>
-                <div class="card-body">
-                  <a href="./productIphones.html"><h2 class="card-text categoryh2">Iphones</h2></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="">
+            <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <a href="./productMacbook.html"><img class="bd-placeholder-img card-img-top" src="./productImages/Macbooks/macbook-air-m1-2020.pic1.jpg"></a>
-                <div class="card-body">
-                  <a href="./productMacbook.html"><h2 class="card-text categoryh2">MacBooks</h2></a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="">
+            <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- ---------------------------------------------Category--------------------------------------------------------- -->
+    </div>
+  </div>
+
+</main>
+      <!-- ---------------------------------------------ProductMacbookMain--------------------------------------------------------- -->
       <!-- ---------------------------------------------footer--------------------------------------------------------- -->
       <div class="container">
         <footer class="py-5">
@@ -116,27 +143,24 @@
                 <p>Monthly digest of whats new and exciting from us.</p>
                 <div class="d-flex w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1 email" type="email" class="form-control" placeholder="Email">
-                  <button class="btn btn-primary" type="button" onclick="addNewsletter">Subscribe</button>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
                 </div>
               </form>
             </div>
           </div>
-
+      
           <div class="d-flex justify-content-between py-4 my-4 border-top">
             <p>&copy; 2021 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-twitter-original"></i></a></li>
-              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-instagram-original"></i></a></li>
-              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-facebook-original"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
             </ul>
           </div>
         </footer>
+        <!-- ---------------------------------------------footer--------------------------------------------------------- -->
       </div>
-      <!-- ---------------------------------------------footer--------------------------------------------------------- -->
-<script src="./script/bootstrap.min.js"></script>
-<script src="./Js/newsletter.js"></script>
-
-</script>
+      <script src="./script/bootstrap.min.js"></script>
 </body>
 </html>
