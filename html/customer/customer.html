@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/list-groups.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <title>WebShop</title>
 </head>
@@ -22,39 +21,27 @@
 
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="./index.html" class="nav-link text-white">
+                  <a href="./customer.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="./admin.html" class="nav-link text-white">
+                  <a href="./profileCustomer.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Dashboard
+                    Profile
                   </a>
                 </li>
                 <li>
-                  <a href="./ordersAdmin.html" class="nav-link text-white">
+                  <a href="./ordersCustomer.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
                     Orders
                   </a>
                 </li>
                 <li>
-                  <a href="./userAdmin.html" class="nav-link text-white" id="products" >
+                  <a href="./products.html" class="nav-link text-white" id="products" >
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Users
-                  </a>
-                </li>
-                <li>
-                  <a href="./newsletterAdmin.html" class="nav-link text-white">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Newsletter
-                  </a>
-                </li>
-                <li>
-                  <a href="./productsAdmin.html" class="nav-link text-white" id="products" >
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Products
+                    Shop
                   </a>
                 </li>
                 <li>
@@ -69,51 +56,39 @@
             </div>
           </div>
         </div>
+        <div class="px-3 py-2 border-bottom mb-3">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="text-end">
+              <a href="./index.html"><button type="button" class="btn btn-primary">Sign out</button></a>
+            </div>
+          </div>
+        </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-       <!-- ---------------------------------------------admin--------------------------------------------------------- -->
+       <!-- ---------------------------------------------Category--------------------------------------------------------- -->
        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-             <h1 class="display-4 fw-normal">Welcome Admin!</h1>
+             <h1 class="display-4 fw-normal">Welcome back</h1>
+             <p class="fs-5 text-muted">Check out your orders and details</p>
+             <img src="./productImages/Hero section/pay.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
       </div>
-<div class="list-group list-group-checkable">
-  <a href="./ordersCustomer.html">
-    <label class="list-group-item py-3" for="listGroupCheckableRadios1">
-        Orders
-          <span class="d-block small opacity-50">
-            Oversee orders
-          </span>
-      </label>
-  </a>
-  <a href="./userAdmin.html">
-    <label class="list-group-item py-3" for="listGroupCheckableRadios1">
-        Users
-          <span class="d-block small opacity-50">
-            Oversee users
-          </span>
-      </label>
-  </a>
-  <a href="./newsletterAdmin.html">
-    <label class="list-group-item py-3" for="listGroupCheckableRadios3">
-    Newsletter
-    <span class="d-block small opacity-50">Subscribers to newsletter</span>
-    </label>
-  </a>
-  <a href="./productsAdmin.html">
-    <label class="list-group-item py-3" for="listGroupCheckableRadios2">
-    Products
-    <span class="d-block small opacity-50">Edit product quantity</span>
-    </label>
-  </a>
-</div>
-
-  <!-- ---------------------------------------------admin--------------------------------------------------------- -->
-<div class="px-3 py-2 border-bottom mb-3">
-  <div class="container d-flex flex-wrap justify-content-center">
-    <div class="text-end">
-      <a href="./index.html"><button type="button" class="btn btn-primary">Sign out</button></a>
-    </div>
-  </div>
-</div>
+      <!-- ---------------------------------------------Category--------------------------------------------------------- -->
+      <!-- ---------------------------------------------footer--------------------------------------------------------- -->
+      <div class="container">
+        <footer class="py-5">
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p></p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-twitter-original"></i></a></li>
+              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-instagram-original"></i></a></li>
+              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-facebook-original"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      <!-- ---------------------------------------------footer--------------------------------------------------------- -->
 <script src="./script/bootstrap.min.js"></script>
+<script src="./Js/newsletter.js"></script>
+
+</script>
 </body>
 </html>

@@ -48,3 +48,14 @@ i.lni.lni-pencil-alt::before{
 }
 }
 -------------------------login css-------------------
+-------------------------Product css-------------------
+div.px-4.py-5.my-5.text-center{
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+div.row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5!important{
+  padding-top: 3rem !important;
+  padding-bottom: 0 !important;
+}
+-------------------------Product css-------------------

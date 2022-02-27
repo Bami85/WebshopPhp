@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/list-groups.css">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <title>WebShop</title>
+    <script defer src="./Js/cart.js"></script>
+    <title>AppleTech</title>
 </head>
 <body>
     <!-- ---------------------------------------------header--------------------------------------------------------- -->
@@ -19,30 +18,29 @@
               <a href="./index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                 <i class="lni lni-home logoPhp"></i>
               </a>
-
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="./customer.html" class="nav-link text-white">
+                  <a href="./index.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Dashboard
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a href="./profileCustomer.html" class="nav-link text-white">
+                  <a href="./admin.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Profile
+                    Admin
                   </a>
                 </li>
                 <li>
-                  <a href="./ordersCustomer.html" class="nav-link text-white">
+                  <a href="./customer.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Orders
+                    Customer
                   </a>
                 </li>
                 <li>
                   <a href="./products.html" class="nav-link text-white" id="products" >
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Shop
+                    Products
                   </a>
                 </li>
                 <li>
@@ -57,57 +55,68 @@
             </div>
           </div>
         </div>
-        <div class="px-3 py-2 border-bottom mb-3">
-          <div class="container d-flex flex-wrap justify-content-center">
-            <div class="text-end">
-              <a href="./index.html"><button type="button" class="btn btn-primary">Sign out</button></a>
-            </div>
-          </div>
-        </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-       <!-- ---------------------------------------------Dashboard--------------------------------------------------------- -->
-       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-             <h1 class="display-4 fw-normal">Welcome back</h1>
-             <p class="fs-5 text-muted">Check out your orders and details</p>
-             <img src="./productImages/Hero section/pay.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Hero" width="500" height="300" loading="lazy">
+       <!-- ---------------------------------------------cart--------------------------------------------------------- -->
+<section class="h1Cate">
+  <h1>Cart</h1>
+</section>
+<div class="px-3 py-2 bg-white text-white">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">AppleWatch 2019</h6>
+            </div>
+            <span class="text-muted">3000:-</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Iphone 11 128gb</h6>
+            </div>
+            <span class="text-muted">5500:-</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">MacBook Air M1 2020</h6>
+            </div>
+            <span class="text-muted">10000:-</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Shipping</h6>
+            </div>
+            <span class="text-muted">200:-</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (SEK)</span>
+            <strong>18700:-</strong>
+          </li>
+        </ul>
+          <div class="input-group">
+            <button type="submit" class="btn btn-secondary">Buy</button>
+          </div>
       </div>
-      <div class="list-group list-group-checkable">
-        <a href="./ordersCustomer.html">
-          <label class="list-group-item py-3" for="listGroupCheckableRadios1">
-              Profile
-                <span class="d-block small opacity-50">
-                  Oversee profile information
-                </span>
-            </label>
-        </a>
-        <a href="./profileCustomer.html">
-          <label class="list-group-item py-3" for="listGroupCheckableRadios1">
-              Orders
-                <span class="d-block small opacity-50">
-                  Oversee orders
-                </span>
-            </label>
-        </a>
-      </div>
-      <!-- ---------------------------------------------Dashboard--------------------------------------------------------- -->
+    </div>
+  </div>
+</div>
+      <!-- ---------------------------------------------cart--------------------------------------------------------- -->
       <!-- ---------------------------------------------footer--------------------------------------------------------- -->
-      <div class="container">
-        <footer class="py-5">
+
+
           <div class="d-flex justify-content-between py-4 my-4 border-top">
-            <p></p>
+            <p>&copy; 2021 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-twitter-original"></i></a></li>
-              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-instagram-original"></i></a></li>
-              <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-facebook-original"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
             </ul>
           </div>
         </footer>
+        <!-- ---------------------------------------------footer--------------------------------------------------------- -->
       </div>
-      <!-- ---------------------------------------------footer--------------------------------------------------------- -->
-<script src="./script/bootstrap.min.js"></script>
-<script src="./Js/newsletter.js"></script>
-
-</script>
+      <script src="./script/bootstrap.min.js"></script>
 </body>
 </html>

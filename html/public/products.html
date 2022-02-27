@@ -21,27 +21,27 @@
 
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="./customer.html" class="nav-link text-white">
+                  <a href="./index.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Dashboard
+                    Home
                   </a>
                 </li>
                 <li>
-                  <a href="./profileCustomer.html" class="nav-link text-white">
+                  <a href="./admin.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Profile
+                    Admin
                   </a>
                 </li>
                 <li>
-                  <a href="./ordersCustomer.html" class="nav-link text-white">
+                  <a href="./customer.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
-                    Orders
+                    Customer
                   </a>
                 </li>
                 <li>
                   <a href="./products.html" class="nav-link text-white" id="products" >
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-                    Shop
+                    Products
                   </a>
                 </li>
                 <li>
@@ -59,72 +59,71 @@
         <div class="px-3 py-2 border-bottom mb-3">
           <div class="container d-flex flex-wrap justify-content-center">
             <div class="text-end">
-              <a href="./index.html"><button type="button" class="btn btn-primary">Sign out</button></a>
+              <a href="./signIn.html">
+                <button type="button" class="btn btn-light text-dark me-2">Login</button>
+              </a>
+              <a href="./signUp.html">
+                <button type="button" class="btn btn-primary">Sign up</button>
+              </a>
+
             </div>
           </div>
         </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
        <!-- ---------------------------------------------Category--------------------------------------------------------- -->
-<div class="container">
-       <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">
-          Edit details
-        </h4>
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
+<section class="h1Cate"><h1>Categories</h1></section>
 
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="First name" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="./productWatches.html"><img class="bd-placeholder-img card-img-top" src="./productImages/AppleWatch/appleWatch-2021.jpg"></a>
+                <div class="card-body">
+                  <a href="./productWatches.html"><h2 class="card-text categoryh2">Apple Watches</h2></a>
+                </div>
               </div>
             </div>
-
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="./productIphones.html"><img class="bd-placeholder-img card-img-top" src="./productImages/Iphones/Iphone11.128GB.pic1.jpg"></a>
+                <div class="card-body">
+                  <a href="./productIphones.html"><h2 class="card-text categoryh2">Iphones</h2></a>
+                </div>
               </div>
             </div>
-
-            <div class="col-12">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="./productMacbook.html"><img class="bd-placeholder-img card-img-top" src="./productImages/Macbooks/macbook-air-m1-2020.pic1.jpg"></a>
+                <div class="card-body">
+                  <a href="./productMacbook.html"><h2 class="card-text categoryh2">MacBooks</h2></a>
+                </div>
               </div>
             </div>
-
-            <div class="col-12">
-              <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-
-            <a href="./index.html">
-              <button type="button" class="btn btn-primary">
-                Save
-              </button>
-            </a>
-
           </div>
         </div>
-    </div>
-
-
-
-
+      </div>
       <!-- ---------------------------------------------Category--------------------------------------------------------- -->
       <!-- ---------------------------------------------footer--------------------------------------------------------- -->
       <div class="container">
         <footer class="py-5">
+          <div class="row">
+            <div class="col-4 offset-1">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1 email" type="email" class="form-control" placeholder="Email">
+                  <button class="btn btn-primary" type="button" onclick="addNewsletter">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
           <div class="d-flex justify-content-between py-4 my-4 border-top">
-            <p></p>
+            <p>&copy; 2021 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-twitter-original"></i></a></li>
               <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-instagram-original"></i></a></li>
