@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/list-groups.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <title>WebShop</title>
 </head>
@@ -23,7 +24,7 @@
                 <li>
                   <a href="./customer.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-                    Home
+                    Dashboard
                   </a>
                 </li>
                 <li>
@@ -65,13 +66,31 @@
         </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-       <!-- ---------------------------------------------Category--------------------------------------------------------- -->
+       <!-- ---------------------------------------------Dashboard--------------------------------------------------------- -->
        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
              <h1 class="display-4 fw-normal">Welcome back</h1>
              <p class="fs-5 text-muted">Check out your orders and details</p>
-             <img src="./productImages/Hero section/pay.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+             <img src="./productImages/Hero section/pay.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Hero" width="500" height="300" loading="lazy">
       </div>
-      <!-- ---------------------------------------------Category--------------------------------------------------------- -->
+      <div class="list-group list-group-checkable">
+        <a href="./ordersCustomer.html">
+          <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+              Profile
+                <span class="d-block small opacity-50">
+                  Oversee profile information
+                </span>
+            </label>
+        </a>
+        <a href="./profileCustomer.html">
+          <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+              Orders
+                <span class="d-block small opacity-50">
+                  Oversee orders
+                </span>
+            </label>
+        </a>
+      </div>
+      <!-- ---------------------------------------------Dashboard--------------------------------------------------------- -->
       <!-- ---------------------------------------------footer--------------------------------------------------------- -->
       <div class="container">
         <footer class="py-5">
