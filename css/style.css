@@ -59,3 +59,12 @@ div.row.row-cols-1.row-cols-lg-3.align-items-stretch.g-4.py-5!important{
   padding-bottom: 0 !important;
 }
 -------------------------Product css-------------------
+
+div.col-md-5.col-lg-4.order-md-last{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: center!important;
+}
