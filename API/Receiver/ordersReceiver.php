@@ -8,16 +8,16 @@ try{
 
         if($_GET["action"] == "getAll") {
 
-            $controller = new ordersController();
+            $controller = new orderController();
             echo(json_encode($controller->getAll()));
             exit;
 
         }else if($_GET["action"] == "getById") {
 
-            $controller = new ordersController();
-            echo(json_encode($controller->getById((int)$_GET["orderid"])));
+            $controller = new orderController();
+            echo(json_encode($controller->getById((int)$_GET["ID"])));
 
-            if(!isset($_GET["orderid"])) {
+            if(!isset($_GET["ID"])) {
                 throw new Exception("Missing ID", 501);
                 exit;
             }

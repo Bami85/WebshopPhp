@@ -11,7 +11,7 @@ abstract class MainController {
     }
 
     abstract function getAll();
-    abstract function getById($productid);
+    abstract function getById($ID);
 
 }
 

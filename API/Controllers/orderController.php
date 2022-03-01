@@ -12,11 +12,11 @@
         }
     
         public function getAll() {
-            return $this->database->fetchAll($this->createFunction);
+            return $this->db->fetchAll($this->createFunction);
         }        
         
-        public function getById($orderid) {
-            return $this->database->fetchById($orderid, $this->createFunction);
+        public function getById($ID) {
+            return $this->db->fetchById($ID, $this->createFunction);
         }
 
     }
