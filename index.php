@@ -68,7 +68,7 @@
         </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-      <button id="getAll">get all</button>
+      <button id="getById">get all</button>
       <!-- ---------------------------------------------hero section--------------------------------------------------------- -->
 <div class="px-4 py-5 my-5 text-center">
   <h1 class="display-5 fw-bold">Web shop</h1>
@@ -345,7 +345,5 @@
 <div class="b-example-divider"></div>
 <script src="./script/bootstrap.min.js"></script>
 <script src="./Js/logic.js"></script>
-
-</script>
 </body>
 </html>

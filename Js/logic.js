@@ -1,4 +1,4 @@
-document.getElementById("getAll").addEventListener("click", getAllProducts)
+document.getElementById("getById").addEventListener("click", getProductFromId)
 
 async function makeRequest(url, method, body) {
     try {
@@ -14,9 +14,10 @@ async function makeRequest(url, method, body) {
 }
 
 
-async function getAllProducts() {
-    const action = "getAll";
+async function getProductFromId() {
+    const action = "getById";
+    const idToGet = 4;
 
-    let allProducts = await makeRequest(`./receivers/productReceiver.php?action=${action}`, "GET");
-    console.log(allProducts)
-}
+    let specificProduct = await makeRequest(`./../receivers/productReceiver.php?action=${action}&ID=${idToGet}`, "GET");
+    console.log(specificProduct)
+};
