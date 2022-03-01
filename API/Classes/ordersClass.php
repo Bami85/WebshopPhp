@@ -2,14 +2,16 @@
 
 class Orders {
 
-    public $orderId;
-    public $shippingName;
-    public $adress;
+    public $Id;
+    public $shippingID;
+    public $customerID;
+    public $orderSum;
 
-    function __construct($orderId, $shippingName, $adress) {
-        $this->orderId = $orderId;
-        $this->shippingName = $shippingName;
-        $this->adress = $adress;
+    function __construct($Id, $shippingID, $customerID, $orderSum) {
+        $this->Id = $Id;
+        $this->shippingID = $shippingID;
+        $this->customerID = $customerID;
+        $this->orderSum = $orderSum;
     }
 }
 

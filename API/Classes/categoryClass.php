@@ -1,17 +1,13 @@
 <?php
 
 Class Category {
-    public $categoryid;
+    public $ID;
     public $categoryName;
-    public $description;
 
+    function __construct($ID, $categoryName, $description) {
 
-    function __construct($categoryid, $categoryName, $description) {
-
-        $this->categoryid = $categoryid;
+        $this->ID = $ID;
         $this->categoryName = $categoryName;
-        $this->description = $description;
-
     }
 }
 

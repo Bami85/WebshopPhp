@@ -8,15 +8,15 @@ Class Database {
 
     function __construct($table, $class) {
 
-        $dns = "mysql:host=localhost;dbname=appletechwebshop";
+        $dns = "mysql:host=localhost;dbname=appletech_webshop";
         $user = "root";
         $password = "root";
 
         $this->db = new PDO($dns, $user, $password);
         $this->db->exec("set names utf8");
 
-        $this->DbTable->$table;
-        $this->ApiClass->class;
+        $this->selectedTable->$table;
+        $this->selectedClass->$class;
     }
 
     public function fetchAll($createInstanceFunction) {
@@ -28,22 +28,21 @@ Class Database {
     }
 
 
-    public function fetchById($productid, $createInstanceFunction) {
-        $query = $this->db->prepare("SELECT * FROM  " . $this->selectedTable . " WHERE productid=" . $productid . ";");
+    public function fetchById($ID, $createInstanceFunction) {
+        $query = $this->db->prepare("SELECT * FROM  " . $this->selectedTable . " WHERE ID=" . $ID . ";");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction);
 
         error_log($result)
 
         if(empty($result)) {
-            throw new Exception($this->selectedClass . " with ID " . $productid . " is not found..", 500);
+            throw new Exception($this->selectedClass . " with ID " . $ID . " is not found..", 500);
             exit;
         }
 
         return $result[0];
+    }
 
 }
-
-
 
 ?>

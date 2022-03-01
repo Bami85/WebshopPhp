@@ -2,19 +2,19 @@
 
 Class Product {
 
-    public $productid;
+    public $id;
     public $productName;
     public $unitPrice;
     public $unitsInStock;
-    public $description;
+    public $image;
 
-    function __construct($productid, $productName, $unitPrice, $unitsInStock , $description) {
+    function __construct($id, $productName, $unitPrice, $unitsInStock , $image) {
 
-        $this->productid = $productid;
+        $this->id = $id;
         $this->productName = $productName;
         $this->unitPrice = $unitPrice;
         $this->unitsInStock = $unitsInStock;
-        $this->description = $description;
+        $this->image = $image;
     }
 }
 

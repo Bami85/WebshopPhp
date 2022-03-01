@@ -6,49 +6,29 @@ include_once("./../Classes/customerClass.php");
 include_once("./../Classes/newsletterClass.php");
 
 
-function createProduct($productid, $productName, $unitPrice, $unitsInStock, $description) {
-    return new ProductClass((int)$productid, $productName, $unitPrice, $unitsInStock, $description);
+function createProduct($ID, $productName, $unitPrice, $unitsInStock, $image) {
+    return new Product((int)$ID, $productName, $unitPrice, $unitsInStock, $image);
 }
 
 
-function createCategory($categoryid, $categoryName, $description) {
-    return new ProductClass((int)$categoryid, $categoryName, $description);
+function createCategory($ID, $categoryName) {
+    return new Category((int)$ID, $categoryName);
 }
 
 
-function createOrder($orderid, $shippingName, $adress) {
-    return new OrderClass((int)$orderid, $shippingName, $adress);
+function createOrder($ID, $firstName, $lastName, $adress, $terms) {
+    return new Customer((int)$ID, $firstName, $lastName, $adress, $terms);
 }
 
 
-function createCustomer($customerid, $username, $email, $adress) {
-    return new ProductClass((int)$customerid, $username, $email, $adress);
+function createCustomer($ID, $email, $name) {
+    return new Newsletter((int)$ID, $email, $name);
 }
 
 
-function createNewsletter($newsletterid, $email, $name) {
-    return new ProductClass((int)$newsletterid, $email, $name);
+function createNewsletter($ID, $shippingID, $customerID, $orderSum) {
+    return new Orders((int)$ID, $shippingID, $customerID, $orderSum);
 }
 
 
 ?>
-</div>
-</div>
-
-<div class="d-flex justify-content-between py-4 my-4 border-top">
-<p>&copy; 2021 Company, Inc. All rights reserved.</p>
-<ul class="list-unstyled d-flex">
-  <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-twitter-original"></i></a></li>
-  <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-instagram-original"></i></a></li>
-  <li class="ms-3"><a class="link-white" href="#"><i class="lni lni-facebook-original"></i></a></li>
-</ul>
-</div>
-</footer>
-</div>
-<!-- ---------------------------------------------footer--------------------------------------------------------- -->
-<script src="./script/bootstrap.min.js"></script>
-<script src="./Js/newsletter.js"></script>
-
-</script>
-</body>
-</html>

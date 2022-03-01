@@ -1,30 +1,14 @@
 <?php
-//class Newsletter {
-
-  // public $newsletterId;
-  //  public $email;
-  //  public $name;
-
-//    function __construct($newsletterId, $email, $name) {
-
-  //      $this->newsletterId = $newsletterId;
-    //    $this->email = $email;
-      //  $this->name = $name;
-//    }
-// }
-?>
-
-<?php
 
 class Newsletter {
 
-    public $newsletterId;
+    public $ID;
     public $email;
     public $name;
 
-    function __construct($newsletterId, $email, $name) {
+    function __construct($ID, $email, $name) {
 
-        $this->newsletterId = $newsletterId;
+        $this->ID = $ID;
         $this->email = $email;
         $this->name = $name;
     }
