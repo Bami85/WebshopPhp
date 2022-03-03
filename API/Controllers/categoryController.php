@@ -16,8 +16,8 @@
             return $this->database->fetchAll($this->createFunction);
         }
     
-        public function getById($categoryid) {
-            return $this->database->fetchById($categoryid, $this->createFunction);
+        public function getById($ID) {
+            return $this->database->fetchById($ID, $this->createFunction);
         }
 
     }

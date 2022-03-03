@@ -15,13 +15,8 @@
             return $this->database->fetchAll($this->createFunction);
         }        
         
-<<<<<<< Updated upstream
-        public function getById($orderid) {
-            return $this->database->fetchById($orderid, $this->createFunction);
-=======
         public function getById($ID) {
             return $this->database->fetchById($ID, $this->createFunction);
->>>>>>> Stashed changes
         }
 
     }

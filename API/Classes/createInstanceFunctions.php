@@ -1,42 +1,34 @@
 <?php
 
-<<<<<<< Updated upstream
-
-include_once("./../Classes/productClass.php");
-include_once("./../Classes/ordersClass.php");
-include_once("./../Classes/customerClass.php");
-include_once("./../Classes/newsletterClass.php");
-=======
 include_once("./../classes/productClass.php");
 include_once("./../classes/ordersClass.php");
 include_once("./../classes/customerClass.php");
 include_once("./../classes/newsletterClass.php");
 include_once("./../classes/categoryClass.php");
->>>>>>> Stashed changes
 
 
-function createProduct($productid, $productName, $unitPrice, $unitsInStock, $description) {
-    return new Product((int)$productid, $productName, $unitPrice, $unitsInStock, $description);
+function createProduct($ID, $productName, $unitPrice, $unitsInStock, $image) {
+    return new Product((int)$ID, $productName, $unitPrice, $unitsInStock, $image);
 }
 
 
-function createCategory($categoryid, $categoryName, $description) {
-    return new Category((int)$categoryid, $categoryName, $description);
+function createCategory($ID, $categoryName) {
+    return new Category((int)$ID, $categoryName);
 }
 
 
-function createOrders($orderid, $shippingName, $adress) {
-    return new Orders((int)$orderid, $shippingName, $adress);
+function createOrders($ID, $shippingID, $customerID, $orderSum) {
+    return new Orders((int)$ID, $shippingID, $customerID, $orderSum);
 }
 
 
-function createCustomer($customerid, $username, $email, $adress) {
-    return new Customer((int)$customerid, $username, $email, $adress);
+function createCustomer($ID, $firstName, $lastName, $adress, $terms) {
+    return new Customer((int)$ID, $firstName, $lastName, $adress, $terms);
 }
 
 
-function createNewsletter($newsletterid, $email, $name) {
-    return new Newsletter((int)$newsletterid, $email, $name);
+function createNewsletter($ID, $email, $name) {
+    return new Newsletter((int)$ID, $email, $name);
 }
 
 

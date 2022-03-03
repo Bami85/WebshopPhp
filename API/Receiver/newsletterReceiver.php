@@ -1,8 +1,5 @@
 <?php
 
-try{
-
-    
     
     try{
 
@@ -25,22 +22,14 @@ try{
                 if(!isset($_GET["ID"])) {
                     throw new Exception("Missing ID", 501);
                     exit;
-                }
-    
-    
-    
+                }   
             }
         }
-    
-    
+
+
     }catch(Exception $e) {
         echo json_encode(array("Message" => $e->getMessage(), "Status" => $e->getCode()));
     }
-
-
-}catch(Exception $e) {
-    echo json_encode(array("Message" => $e->getMessage(), "Status" => $e->getCode()));
-}
 
 
 ?>
