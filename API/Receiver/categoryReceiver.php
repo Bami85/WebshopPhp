@@ -1,32 +1,25 @@
 <?php
 
-try{
+    include_once("./../Classes/createInstanceFunctions.php");
+    include_once("./../Controllers/productController.php");
+    include_once("./../Controllers/mainController.php");
 
-    include_once("./../Controllers/categoryController.php");
+    class CategoryController extends MainController {
 
-    if($_SERVER["REQUEST_METHOD"] == "GET") {
+        private $createFunction = "createCategory";
 
-        if($_GET["action"] == "getAll") {
-
-            $controller = new CategoryController();
-            echo(json_encode($controller->getAll()));
-            exit;
-
-        }else if($_GET["action"] == "getById") {
-
-            $controller = new CategoryController();
-            echo(json_encode($controller->getById((int)$_GET["ID"])));
-
-            if(!isset($_GET["ID"])) {
-                throw new Exception("Missing ID", 501);
-                exit;
-            }
+        function __construct() {
+            parent::__construct("Categories", "Category");
         }
+    
+        public function getAll() {
+            return $this->database->fetchAll($this->createFunction);
+        }
+    
+        public function getById($ID) {
+            return $this->database->fetchById($ID, $this->createFunction);
+        }
+
     }
-
-}catch(Exception $e) {
-    echo json_encode(array("Message" => $e->getMessage(), "Status" => $e->getCode()));
-}
-
 
 ?>

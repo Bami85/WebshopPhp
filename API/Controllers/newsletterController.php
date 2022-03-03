@@ -4,7 +4,8 @@
     include_once("./../Controllers/mainController.php");
 
     class NewsletterController extends MainController {
-
+        
+        
         private $createFunction = "createNewsletter";
 
         function __construct() {

@@ -1,17 +1,20 @@
 <?php
 
-class Orders {
+Class Product {
 
     public $ID;
-    public $shippingID;
-    public $customerID;
-    public $orderSum;
+    public $productName;
+    public $unitPrice;
+    public $unitsInStock;
+    public $image;
 
-    function __construct($ID, $shippingID, $customerID, $orderSum) {
+    function __construct($ID, $productName, $unitPrice, $unitsInStock, $image) {
+
         $this->ID = $ID;
-        $this->shippingID = $shippingID;
-        $this->customerID = $customerID;
-        $this->orderSum = $orderSum;
+        $this->productName = $productName;
+        $this->unitPrice = $unitPrice;
+        $this->unitsInStock = $unitsInStock;
+        $this->image = $image;
     }
 }
 
