@@ -1,10 +1,18 @@
 <?php
 
+<<<<<<< Updated upstream
 
 include_once("./../Classes/productClass.php");
 include_once("./../Classes/ordersClass.php");
 include_once("./../Classes/customerClass.php");
 include_once("./../Classes/newsletterClass.php");
+=======
+include_once("./../classes/productClass.php");
+include_once("./../classes/ordersClass.php");
+include_once("./../classes/customerClass.php");
+include_once("./../classes/newsletterClass.php");
+include_once("./../classes/categoryClass.php");
+>>>>>>> Stashed changes
 
 
 function createProduct($productid, $productName, $unitPrice, $unitsInStock, $description) {

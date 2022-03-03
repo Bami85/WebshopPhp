@@ -3,7 +3,11 @@
 try{
 
     include_once("./../Controllers/categoryController.php");
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
     if($_SERVER["REQUEST_METHOD"] == "GET") {
 
         if($_GET["action"] == "getAll") {

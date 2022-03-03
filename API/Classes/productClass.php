@@ -8,7 +8,11 @@ Class Product {
     public $unitsInStock;
     public $description;
 
+<<<<<<< Updated upstream
     function __construct($productid, $productName, $unitPrice, $unitsInStock , $description) {
+=======
+    function __construct($ID, $productName, $unitPrice, $unitsInStock, $image) {
+>>>>>>> Stashed changes
 
         $this->productid = $productid;
         $this->productName = $productName;
