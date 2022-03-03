@@ -2,7 +2,7 @@
 
 try{
 
-    include_once("./../Controllers/productController.php");
+    include_once("./../controllers/productController.php");
 
     if($_SERVER["REQUEST_METHOD"] == "GET") {
 
@@ -15,12 +15,22 @@ try{
         }else if($_GET["action"] == "getById") {
 
             $controller = new ProductController();
+<<<<<<< Updated upstream
             echo(json_encode($controller->getById((int)$_GET["productid"])));
 
             if(!isset($_GET["productid"])) {
+=======
+            echo(json_encode($controller->getById((int)$_GET["ID"])));
+            exit;
+            
+            if(!isset($_GET["ID"])) {
+>>>>>>> Stashed changes
                 throw new Exception("Missing ID", 501);
                 exit;
             }
+
+
+
         }
     }
 
