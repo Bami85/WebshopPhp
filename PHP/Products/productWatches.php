@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/hero.css">
-    <link rel="stylesheet" href="../../css/features.css">
+    <!-- <link rel="stylesheet" href="../../css/hero.css"> -->
+    <!-- <link rel="stylesheet" href="../../css/features.css"> -->
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <script async src="../../script/bootstrap.min.js"></script>
     <!-- <script src="../../script/bootstrap.min.js.map"></script> -->

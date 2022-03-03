@@ -2,17 +2,19 @@
 
 class Customer {
 
-    public $customerId;
-    public $userName;
-    public $email;
+    public $ID;
+    public $firstName;
+    public $lastName;
     public $adress;
+    public $terms;
 
-    function __construct($customerId, $userName, $email, $adress) {
+    function __construct($ID, $firstName, $lastName, $adress, $terms) {
 
-        $this->custoerId = $customerId;
-        $this->userName = $userName;
-        $this->email = $email;
+        $this->ID = $ID;
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
         $this->adress = $adress;
+        $this->terms = $terms;
 
     }
 }

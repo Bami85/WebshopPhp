@@ -15,9 +15,9 @@ try{
         }else if($_GET["action"] == "getById") {
 
             $controller = new ordersController();
-            echo(json_encode($controller->getById((int)$_GET["orderid"])));
+            echo(json_encode($controller->getById((int)$_GET["ID"])));
 
-            if(!isset($_GET["orderid"])) {
+            if(!isset($_GET["ID"])) {
                 throw new Exception("Missing ID", 501);
                 exit;
             }

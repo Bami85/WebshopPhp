@@ -2,23 +2,19 @@
 
 Class Product {
 
-    public $productid;
+    public $ID;
     public $productName;
     public $unitPrice;
     public $unitsInStock;
-    public $description;
+    public $image;
 
-<<<<<<< Updated upstream
-    function __construct($productid, $productName, $unitPrice, $unitsInStock , $description) {
-=======
     function __construct($ID, $productName, $unitPrice, $unitsInStock, $image) {
->>>>>>> Stashed changes
 
-        $this->productid = $productid;
+        $this->ID = $ID;
         $this->productName = $productName;
         $this->unitPrice = $unitPrice;
         $this->unitsInStock = $unitsInStock;
-        $this->description = $description;
+        $this->image = $image;
     }
 }
 

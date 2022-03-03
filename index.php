@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -209,4 +207,3 @@
 <script src="./Js/logic.js"></script>
 </body>
 </html>
->>>>>>> Stashed changes

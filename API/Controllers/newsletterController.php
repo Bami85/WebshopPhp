@@ -4,8 +4,6 @@
     include_once("./../Controllers/mainController.php");
 
     class NewsletterController extends MainController {
-<<<<<<< Updated upstream
-=======
         
         
         private $createFunction = "createNewsletter";
@@ -21,7 +19,6 @@
         public function getById($ID) {
             return $this->database->fetchById($ID, $this->createFunction);
         }
->>>>>>> Stashed changes
 
     }
 
