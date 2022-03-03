@@ -3,6 +3,7 @@
 try{
 
     include_once("./../Controllers/categoryController.php");
+
     if($_SERVER["REQUEST_METHOD"] == "GET") {
 
         if($_GET["action"] == "getAll") {

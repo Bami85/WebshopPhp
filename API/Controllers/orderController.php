@@ -10,13 +10,14 @@
         function __construct() {
             parent::__construct("Orders", "Orders");
         }
-    
+
         public function getAll() {
             return $this->database->fetchAll($this->createFunction);
         }        
         
         public function getById($ID) {
             return $this->database->fetchById($ID, $this->createFunction);
+
         }
 
     }

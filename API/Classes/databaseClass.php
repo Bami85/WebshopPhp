@@ -19,19 +19,21 @@ Class Database {
         $this->selectedClass->$class;
     }
 
-    public function fetchAll($createInstanceFunction) {
-        $query = $this->db->prepare("SELECT * FROM " . $this->selectedTable);
+    public function fetchAll( $createInstanceFunction) {
+        $query = $this->db->prepare("SELECT * FROM " . $this->selectedTable . ";");
         $query->execute();
-        $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction); 
-
-        return $result;
+        $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction);
+        if($result) {
+            return $result; 
+        }
+ 
     }
-
 
     public function fetchById($ID, $createInstanceFunction) {
         $query = $this->db->prepare("SELECT * FROM " . $this->selectedTable . " WHERE ID=" . $ID . ";");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction);
+
 
         error_log($result);
 

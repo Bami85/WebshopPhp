@@ -1,7 +1,7 @@
 <?php
 
-include_once("./../Classes/createInstanceFunctions.php");
-include_once("./../Controllers/mainController.php");
+include_once("./../classes/createInstanceFunctions.php");
+include_once("./../controllers/mainController.php");
 
 class ProductController extends MainController {
 
@@ -17,6 +17,11 @@ class ProductController extends MainController {
 
     public function getById($ID) {
         return $this->database->fetchById($ID, $this->createFunction);
+
+
+    public function getById($ID) {
+        return $this->database->fetchById($ID, $this->createFunction);
+
     }
 
 }

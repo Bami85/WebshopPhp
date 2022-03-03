@@ -1,6 +1,6 @@
 <?php
 
-include_once("./../Classes/databaseClass.php");
+include_once("./../classes/databaseClass.php");
 
 abstract class MainController {
 

@@ -8,8 +8,8 @@ Class Product {
     public $unitsInStock;
     public $image;
 
-    function __construct($ID, $productName, $unitPrice, $unitsInStock , $image) {
-
+    function __construct($ID, $productName, $unitPrice, $unitsInStock, $image) {
+        
         $this->ID = $ID;
         $this->productName = $productName;
         $this->unitPrice = $unitPrice;

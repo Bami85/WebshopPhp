@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/features.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/hero.css">
+    <link rel="stylesheet" href="../../css/features.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <title>WebShop</title>
 </head>
@@ -42,7 +43,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="./products.html" class="nav-link text-white" id="products" >
+                  <a href="./php/products/categories.php" class="nav-link text-white" id="products" >
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
                     Products
                   </a>
@@ -68,9 +69,8 @@
         </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-      <button id="getById">get all</button>
       <!-- ---------------------------------------------hero section--------------------------------------------------------- -->
-<div class="px-4 py-5 my-5 text-center">
+      <div class="px-4 py-5 my-5 text-center">
   <h1 class="display-5 fw-bold">Web shop</h1>
 <img class="d-block mx-auto mb-4" src="./productImages/Hero section/hero.jpg" alt="" width="60%" height="auto">
 <div class="col-lg-6 mx-auto">
@@ -81,16 +81,16 @@
 </div>
       <!-- ---------------------------------------------Hero section--------------------------------------------------------- -->
       <!-- ---------------------------------------------cat--------------------------------------------------------- -->
-      <div class="container px-4 py-5" id="custom-cards">
-          <h2 class="pb-2 border-bottom">Latest Products</h2>
+      <!-- <div class="container px-4 py-5" id="custom-cards">
+          <h2 class="pb-2 border-bottom">Categories</h2>
           <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
-            <a class="plain" href="./productWatches.html">
+            <a class="plain" href="./PHP/Products/productWatches.php">
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/AppleWatch/appleWatch-2019.jpg');">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                   <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    AppleWatch
+                    Watches
                   </h2>
                   <ul class="d-flex list-unstyled mt-auto">
                     <li class="me-auto">
@@ -109,55 +109,7 @@
             </div>
             </a>
 
-            <a class="plain" href="./productWatches.html">
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/AppleWatch/appleWatch-2019.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    AppleWatch
-                  </h2>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                      <small></small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                      <small></small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </a>
-
-            <a class="plain" href="./productWatches.html">
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/AppleWatch/appleWatch-2019.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    AppleWatch
-                  </h2>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                      <small></small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                      <small></small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </a>
-
-          <a class="plain" href="./productIphones.html">
+          <a class="plain" href="./PHP/Products/productIphones.php">
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/Iphones/Iphone11.128GB.pic2.jpg');">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -181,55 +133,9 @@
             </div>
           </a>
 
-          <a class="plain" href="./productIphones.html">
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/Iphones/Iphone11.128GB.pic2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    Iphone
-                  </h2>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                      <small></small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                      <small></small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </a>
+          
 
-          <a class="plain" href="./productIphones.html">
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/Iphones/Iphone11.128GB.pic2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    Iphone
-                  </h2>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                      <small></small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                      <small></small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a class="plain" href="./productMacbook.html">
+          <a class="plain" href="./PHP/Products/productMacbook.php">
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/Macbooks/macbook-pro2021Pic2.jpg');">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -253,55 +159,9 @@
             </div>
             </a>
 
-            <a class="plain" href="./productMacbook.html">
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/Macbooks/macbook-pro2021Pic2.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                      MacBooks
-                    </h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li class="me-auto">
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                        <small></small>
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                        <small></small>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              </a>
-
-              <a class="plain" href="./productMacbook.html">
-                <div class="col">
-                  <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./productImages/Macbooks/macbook-pro2021Pic2.jpg');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                      <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                        MacBooks
-                      </h2>
-                      <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                          <small></small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                          <small></small>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                </a>
+          
           </div>
-        </div>
+        </div> -->
 
       <!-- ---------------------------------------------cat--------------------------------------------------------- -->
       <!-- ---------------------------------------------news--------------------------------------------------------- -->
@@ -344,6 +204,7 @@
       <!-- ---------------------------------------------footer--------------------------------------------------------- -->
 <div class="b-example-divider"></div>
 <script src="./script/bootstrap.min.js"></script>
+<script src="./script/bootstrap.min.js.map"></script>
 <script src="./Js/logic.js"></script>
 </body>
 </html>
