@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <script async src="../../script/bootstrap.min.js"></script>
-    <script defer src="../../Js/category.js"></script>
-    <title>WebShop</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./Js/cart.js"></script>
+    <title>AppleTech</title>
 </head>
 <body>
     <!-- ---------------------------------------------header--------------------------------------------------------- -->
@@ -20,10 +18,9 @@
               <a href="./index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
                 <i class="lni lni-home logoPhp"></i>
               </a>
-
               <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                 <li>
-                  <a href="../../index.php" class="nav-link text-white">
+                  <a href="./index.html" class="nav-link text-white">
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
                     Home
                   </a>
@@ -41,13 +38,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="../../php/products/categories.php" class="nav-link text-white" id="products" >
+                  <a href="./products.html" class="nav-link text-white" id="products" >
                     <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
                     Products
                   </a>
                 </li>
                 <li>
-                  <a class="link-light" href="../../PHP/startpage/cart.php">
+                  <a class="link-light" href="./cart.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                     <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                   </svg>
@@ -57,51 +54,36 @@
             </div>
           </div>
         </div>
-        <div class="px-3 py-2 border-bottom mb-3">
-          <div class="container d-flex flex-wrap justify-content-center">
-            <div class="text-end">
-              <a href="./signIn.html"><button type="button" class="btn btn-secondary text-white me-2">Login</button></a>
-              <a href="./signUp.html"><button type="button" class="btn btn-dark">Sign up</button></a>
-            </div>
-          </div>
-        </div>
       </header>
       <!-- ---------------------------------------------header--------------------------------------------------------- -->
-       <!-- ---------------------------------------------Category--------------------------------------------------------- -->
-<section class="h1Cate">
-  <h1>Categories</h1>
-</section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-          <span></span>
-            
-          </div>
-        </div>
-      </div>
-      <!-- ---------------------------------------------Category--------------------------------------------------------- -->
+       <!-- ---------------------------------------------cart--------------------------------------------------------- -->
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Thanks for your order!</h1>
+      <img src="./productImages/Hero section/cart.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Hero" width="500" height="300" loading="lazy">
+</div>
+<div class="px-3 py-2 mb-3">
+  <div class="container d-flex flex-wrap justify-content-center">
+    <div class="text-end">
+      <a href="./index.html"><button type="button" class="btn btn-secondary">Return to store!</button></a>
+    </div>
+  </div>
+</div>
+      <!-- ---------------------------------------------cart--------------------------------------------------------- -->
       <!-- ---------------------------------------------footer--------------------------------------------------------- -->
       <div class="container">
-        <footer class="py-4">
+        <footer class="py-5">
           <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <p></p>
             <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="mailto:webshop@gmail.com"><i class="lni lni-envelope"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href="tel:070-000-000"><i class="lni lni-phone"></i></a></li>
-            </ul>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="https://twitter.com"><i class="lni lni-twitter-original"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href="https://instagram.com"><i class="lni lni-instagram-original"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href="https://facebook.com"><i class="lni lni-facebook-original"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href="https://github.com/Bami85/WebshopPhp"><i class="lni lni-github-original"></i></a></li>
+              <li class="ms-3"><a class="link-white" href="https://twitter.com"><i class="lni lni-twitter-original"></i></a></li>
+              <li class="ms-3"><a class="link-white" href="https://instagram.com"><i class="lni lni-instagram-original"></i></a></li>
+              <li class="ms-3"><a class="link-white" href="https://facebook.com"><i class="lni lni-facebook-original"></i></a></li>
+              <li class="ms-3"><a class="link-white" href="https://github.com/Bami85/WebshopPhp"><i class="lni lni-github-original"></i></a></li>
             </ul>
           </div>
         </footer>
       </div>
-      <!-- ---------------------------------------------footer--------------------------------------------------------- -->
-<!-- <script src="./script/bootstrap.min.js"></script> -->
-
-</script>
+        <!-- ---------------------------------------------footer--------------------------------------------------------- -->
+      <script src="./script/bootstrap.min.js"></script>
 </body>
 </html>
