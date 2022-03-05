@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 03, 2022 at 12:22 PM
+-- Generation Time: Mar 04, 2022 at 12:06 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.16
 
@@ -41,17 +41,18 @@ CREATE TABLE `admin` (
 
 CREATE TABLE `categories` (
   `ID` int(10) NOT NULL,
-  `categoryName` varchar(50) NOT NULL
+  `categoryName` varchar(50) NOT NULL,
+  `categoryImg` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `categories`
 --
 
-INSERT INTO `categories` (`ID`, `categoryName`) VALUES
-(1, 'Watches'),
-(2, 'Iphones'),
-(3, 'MacBooks');
+INSERT INTO `categories` (`ID`, `categoryName`, `categoryImg`) VALUES
+(1, 'Watches', 'appleWatch-2019.jpg'),
+(2, 'Iphones', 'Iphone12Mini64GB.pic2.jpg'),
+(3, 'MacBooks', 'macbook-pro2021Pic2.jpg');
 
 -- --------------------------------------------------------
 
@@ -61,23 +62,24 @@ INSERT INTO `categories` (`ID`, `categoryName`) VALUES
 
 CREATE TABLE `categorydetails` (
   `productID` int(10) NOT NULL,
-  `categoryID` int(10) NOT NULL
+  `categoryID` int(10) NOT NULL,
+  `categoryName` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `categorydetails`
 --
 
-INSERT INTO `categorydetails` (`productID`, `categoryID`) VALUES
-(3, 1),
-(4, 1),
-(5, 1),
-(9, 2),
-(10, 2),
-(11, 2),
-(6, 3),
-(7, 3),
-(8, 3);
+INSERT INTO `categorydetails` (`productID`, `categoryID`, `categoryName`) VALUES
+(3, 1, 'Watches'),
+(4, 1, 'Watches'),
+(5, 1, 'Watches'),
+(6, 3, 'MacBooks'),
+(7, 3, 'MacBooks'),
+(8, 3, 'MacBooks'),
+(9, 2, 'Iphones'),
+(10, 2, 'Iphones'),
+(11, 2, 'Iphones');
 
 -- --------------------------------------------------------
 

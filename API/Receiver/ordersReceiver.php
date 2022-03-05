@@ -14,7 +14,7 @@ try{
 
         }else if($_GET["action"] == "getById") {
 
-            $controller = new orderController();
+            $controller = new ordersController();
             echo(json_encode($controller->getById((int)$_GET["ID"])));
 
             if(!isset($_GET["ID"])) {

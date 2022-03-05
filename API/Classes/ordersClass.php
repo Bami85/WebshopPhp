@@ -3,18 +3,15 @@
 Class Product {
 
     public $ID;
-    public $productName;
-    public $unitPrice;
-    public $unitsInStock;
-    public $image;
-
-    function __construct($ID, $productName, $unitPrice, $unitsInStock, $image) {
-
+    public $shippingID;
+    public $customerID;
+    public $orderSum;
+    
+    function __construct($ID, $shippingID, $customerID, $orderSum) {
         $this->ID = $ID;
-        $this->productName = $productName;
-        $this->unitPrice = $unitPrice;
-        $this->unitsInStock = $unitsInStock;
-        $this->image = $image;
+        $this->shippingID = $shippingID;
+        $this->customerID = $customerID;
+        $this->orderSum = $orderSum;
     }
 }
 

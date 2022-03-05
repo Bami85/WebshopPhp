@@ -25,11 +25,10 @@ Class Database {
         $query = $this->db->prepare("SELECT * FROM " . $this->selectedTable . ";");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction);
-        if($result) {
-            return $result; 
-        }
-        return $false;
- 
+        
+        
+        return $result;
+
     }
 
 
@@ -46,6 +45,23 @@ Class Database {
         return $result[0];
     }
 
+        }
+
+
+
+    // public function getCategoryId($getSpecificCategoryId, $createInstanceFunction) {
+    //     $query = $this->db->prepare('SELECT * FROM categorydetails JOIN product ON categorydetails.productID = product.ID WHERE categoryID = ');
+    //     $query->execute();
+    //     $result = $query->fetchAll(PDO::FETCH_FUNC, $createInstanceFunction);
+
+    //     if(empty($result)) {
+    //         throw new Exception($this->selectedClass . " is not found.. ", 500)
+    //         exit;
+    //     }
+        
+    //     return $result;
+
+    // }
 }
 
 ?>

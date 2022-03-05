@@ -12,38 +12,39 @@ async function makeRequest(url, method, body) {
 }
     
 
+
 async function getAllCategories() {
     const action = "getById";
-    const idToGet = 1;
 
-    let getById = await makeRequest(`/api/receiver/categoryReceiver.php?action=${action}&ID=${idToGet}`, "GET");
-    console.log(getById)
 
-    // for (let i = 0; i < getById.length; i++) {
-    //     let product = getById[i];
+    let categoryById = await makeRequest(`/api/receiver/categoryReceiver.php?action=${action}&ID=${ID}`, "GET");
+    console.log(categoryById)
+
+    for (let i = 0; i < categoryById.length; i++) {
+        let categories = categoryById[i];
 
         const main = document.getElementsByTagName("span")[0];
 
         let colContainer = document.createElement("div")
         colContainer.classList.add('col')
-
         let childContainer = document.createElement("div")
         childContainer.classList.add('card', 'shadow-card')
 
         let childImgContainer = document.createElement("img")
         childImgContainer.classList.add('bd-placeholder-img', 'card-img-top')
-        childImgContainer.src = "/productImages/" + product.image
+        childImgContainer.src = "/productImages/" + categories.categoryImg
 
         let childTextContainer = document.createElement("div")
         childTextContainer.classList.add("card-body")
 
         let childTitle = document.createElement("h2")
         childTitle.classList.add("card-text")
+        childTitle.innerHTML = categories.categoryName
 
 
         main.append(colContainer, childContainer, childImgContainer, childTextContainer, childTitle)
-          
-    // }
+
+    }
 }
 
 window.addEventListener("load", () => {
